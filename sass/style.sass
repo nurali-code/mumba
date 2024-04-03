@@ -49,6 +49,7 @@
             display: block
             width: 100%
             height: 100%
+            animation: upDown 1s ease infinite alternate-reverse
 
     &__img
         position: absolute
@@ -107,7 +108,7 @@
             margin-bottom: 2vw
 
         &__h1
-            top: 35%
+            top: 34%
             width: 79vw
             height: 30%
             transform: translateY(-55%)
@@ -115,7 +116,7 @@
         &__img
             width: 125vw
             height: 40%
-            top: 45%
+            top: 46%
             right: -12%
             transform: none
 
@@ -285,4 +286,9 @@
         transform: scale(.94)
     100%
         transform: scale(1.08)
-        
+
+@keyframes upDown
+    0%
+        transform: translateY(10px)
+    100%
+        transform: translateY(-10px)
