@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phunt</title>
+    <title>Baby Mumba</title>
     <meta name="theme-color" content="#762aa5" />
     <link rel="shortcut icon" href="favicon.png" type="image/png">
     <!-- <link rel="stylesheet" href="./css/aos.css"> -->
@@ -15,23 +15,26 @@
 <body>
     <main class="main fxc">
         <nav class="fx">
-            <a href="#about" data-aos="fade-right" data-aos-offset="0" title="About">
+            <a href="#about" data-aos="fade-right" data-aos-offset="0" data-aos-delay="200" title="About">
                 <img src="img/btn_1.png" alt="about"></a>
             <a href="#tekenomics" title="Tekenomics" data-aos="fade-right" data-aos-offset="0">
                 <img src="img/btn_4.png" alt="about"></a>
 
-            <img src="img/base.png" class="main__logo" data-aos="fade-up" data-aos-offset="0" alt="base">
+            <img src="img/base.png" class="main__logo" data-aos="fade-down" data-aos-offset="0" alt="base">
 
-            <a href="#tekenomics" title="Buy" data-aos="fade-down" data-aos-delay="100" data-aos-offset="0">
+            <a href="#tekenomics" title="Buy" data-aos="fade-left" data-aos-delay="100" data-aos-offset="0">
                 <img src="img/btn_2.png" alt="Buy"></a>
 
             <a href="#" target="_blank" title="Game" data-aos="fade-left" data-aos-offset="0">
-                <img src="img/btn_3.png" alt="Game"></a>
+                <img src="img/btn_3.png" data-aos-delay="200" alt="Game"></a>
         </nav>
-        <img src="img/baby.png" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0" class="main__h1"
-            alt="baby mumba">
-        <img src="img/main.png" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0" class="main__img"
-            alt="baby mumba image">
+
+        <div class="main__h1"><img src="img/baby.png" data-aos="fade-right" data-aos-delay="200" data-aos-offset="0"
+                alt="baby mumba"></div>
+
+        <div class="main__img"> <img src="img/main.png" data-aos="fade-left" data-aos-delay="400" data-aos-offset="0"
+                alt="baby mumba image"></div>
+
         <div class="soc fx">
             <a href="#" target="_blank" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0" title="telegram">
                 <img src="img/tg.png" alt="telegram">
@@ -53,22 +56,21 @@
         <!-- <img src="img/lifs-r.png" class="partners__lif" loading="lazy" alt="lif"> -->
     </div>
 
-    <!-- <script src="./js/aos.js"></script> -->
-
     <div class="bg">
         <div class="about fx" id="about">
             <div class="col">
-                <img src="img/about_me.png" loading="lazy" alt="about_me">
-                <p>
+                <img data-aos="fade-up" src="img/about_me.png" loading="lazy" alt="about_me">
+                <p data-aos="fade-up" data-aos-delay="100">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem dolorum distinctio temporibus,
                     repellendus accusamus error quis earum. Atque amet officiis natus nesciunt cupiditate maxime
                     veritatis, distinctio eius, quod, harum itaque necessitatibus iusto eum est repellendus. Cumque cum
                     ratione itaque maiores quam voluptas suscipit magni. Consequuntur, explicabo, perferendis fugit
                     voluptatem, ab architecto
                 </p>
-                <button class="contract"></button>
+                <button data-aos="fade-up" data-aos-delay="200" class="contract"></button>
             </div>
-            <img src="img/second.png" class="about__img" loading="lazy" alt="about">
+            <img src="img/second.png" data-aos="fade-left" data-aos-delay="200" class="about__img" loading="lazy"
+                alt="about">
         </div>
 
         <div class="tekenomics fx" id="tekenomics">
@@ -96,12 +98,11 @@
             <img src="img/descr.png" alt="i" class="footer__descr" loading="lazy">
             <img src="img/base.png" alt="i" class="footer__base" loading="lazy">
             <img src="img/screem.png" alt="i" class="footer__screem" loading="lazy">
-
         </footer>
 
     </div>
 
-
+    <!-- <script src="./js/aos.js"></script> -->
     <script>
         AOS.init({ duration: 1000, });
 

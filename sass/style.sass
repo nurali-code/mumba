@@ -18,6 +18,7 @@
 
     nav
         width: 90vw
+        gap: 2%
         a
             width: 14vw
             display: block
@@ -31,32 +32,40 @@
     &__logo
         display: block
         margin: 0 auto
-        width: 13vw
+        width: 11vw
 
     &__h1
         position: absolute
         z-index: -1
         top: 50%
-        width: 35vw
-        object-fit: contain
-        object-position: center center
+        width: 38vw
         left: 10%
         height: 57%
         transform: translateY(-55%)
+        img
+            object-fit: contain
+            object-position: center center
+            display: block
+            width: 100%
+            height: 100%
 
     &__img
         position: absolute
         top: 50%
         width: 65vw
-        object-fit: contain
-        object-position: center bottom
-        right: -5%
+        right: -6%
         height: 90%
         transform: translateY(-50%)
         z-index: -1111
+        img
+            object-fit: contain
+            object-position: center center
+            display: block
+            width: 100%
+            height: 100%
 
     .soc
-        width: 500px
+        width: 430px
         max-width: 26vw
         justify-content: space-between
         a
@@ -67,9 +76,42 @@
         img
             transition: all ease .2s
             display: block
-            filter: drop-shadow(0 0 30px rgba(#ff66ff, .5))
+            filter: drop-shadow(0 0 40px rgba(#ff66ff, 1))
             &:hover
                 transform: scale(1.1)
+
+    @media screen and ( max-width: 1000px )
+        padding: 3vw 0 0
+        .soc
+            max-width: 70vw
+
+        nav
+            flex-wrap: wrap
+            width: 100%
+            gap: 0
+            a
+                width: 25vw
+                order: 2
+
+        &__logo
+            width: 100%
+            height: 7vw
+            object-fit: contain
+            object-position: center center
+            order: 1
+            margin-bottom: 2vw
+
+        &__h1
+            top: 35%
+            width: 79vw
+            transform: translateY(-55%)
+
+        &__img
+            width: 122vw
+            height: 40%
+            top: 40%
+            right: -12%
+            transform: none
 
 .partners
     margin: 0 auto
@@ -126,21 +168,30 @@
         margin-bottom: 2vw
 
 .footer
-    padding: 4vw 3vw 2vw
+    padding: 4vw 21vw 2vw 3vw
     position: relative
     z-index: 1
-    gap: 4vw
+    gap: 3vw
+    align-items: flex-end
     &__logo
-        width: 10vw
+        width: 9vw
 
     &__descr
-        width: 35vw
+        width: 31vw
 
     &__base
-        width: 14vw
+        width: 12vw
+        margin: 0 auto
 
     &__screem
         position: absolute
         bottom: -5vw
         right: -4vw
         width: 25vw
+
+@media screen and ( max-width: 1000px )
+    .partners,
+    .about,
+    .tekenomics,
+    .footer
+        display: none
