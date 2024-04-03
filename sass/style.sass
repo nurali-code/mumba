@@ -1,0 +1,146 @@
+@import 'normolize'
+@import 'fonts'
+@import 'elements'
+@import 'header'
+
+.main
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    background-image: url('../img/bg_main.jpg')
+    min-height: 100vh
+    overflow: hidden
+
+    justify-content: space-between
+    position: relative
+    z-index: 1
+    padding: 20px 0 2vw
+
+    nav
+        width: 90vw
+        a
+            width: 14vw
+            display: block
+
+        img
+            display: block
+            transition: all ease .2s
+            &:hover
+                transform: scale(1.1)
+
+    &__logo
+        display: block
+        margin: 0 auto
+        width: 13vw
+
+    &__h1
+        position: absolute
+        z-index: -1
+        top: 50%
+        width: 35vw
+        object-fit: contain
+        object-position: center center
+        left: 10%
+        height: 57%
+        transform: translateY(-55%)
+
+    &__img
+        position: absolute
+        top: 50%
+        width: 65vw
+        object-fit: contain
+        object-position: center bottom
+        right: -5%
+        height: 90%
+        transform: translateY(-50%)
+        z-index: -1111
+
+    .soc
+        width: 500px
+        max-width: 26vw
+        justify-content: space-between
+        a
+            width: 30%
+            padding: 20px
+            border-radius: 10%
+
+        img
+            transition: all ease .2s
+            display: block
+            filter: drop-shadow(0 0 30px rgba(#ff66ff, .5))
+            &:hover
+                transform: scale(1.1)
+
+.partners
+    margin: 0 auto
+    position: relative
+    z-index: 1
+    justify-content: center
+    gap: 4%
+    // overflow: hidden
+    span
+        display: block
+        width: 300px
+        max-width: 48%
+        img
+            display: block
+            transition: all ease .2s
+            filter: drop-shadow(0 0 30px rgba(#ff66ff, .8))
+            &:hover
+                transform: scale(1.1)
+
+    &__lif
+        display: block
+        position: absolute
+        width: 20vw
+        z-index: 1111
+        right: -5%
+
+.about
+    padding: 6vw 0
+    .col
+        width: 35vw
+        margin: 0 auto
+
+    p
+        padding: 1vw
+        margin-bottom: 2vw
+
+    &__img
+        width: 50vw
+
+.tekenomics
+    padding: 100px 0
+    align-items: flex-start
+    .col
+        width: 35vw
+        margin: 0 auto
+
+    &__heading
+        max-width: 90%
+        max-height: 150px
+        margin: 0 0 1.5vw 1vw
+        display: block
+
+    p
+        margin-bottom: 2vw
+
+.footer
+    padding: 4vw 3vw 2vw
+    position: relative
+    z-index: 1
+    gap: 4vw
+    &__logo
+        width: 10vw
+
+    &__descr
+        width: 35vw
+
+    &__base
+        width: 14vw
+
+    &__screem
+        position: absolute
+        bottom: -5vw
+        right: -4vw
+        width: 25vw

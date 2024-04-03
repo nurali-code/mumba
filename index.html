@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phunt</title>
+    <meta name="theme-color" content="#762aa5" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <!-- <link rel="stylesheet" href="./css/aos.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <main class="main fxc">
+        <nav class="fx">
+            <a href="#about" data-aos="fade-right" data-aos-offset="0" title="About">
+                <img src="img/btn_1.png" alt="about"></a>
+            <a href="#tekenomics" title="Tekenomics" data-aos="fade-right" data-aos-offset="0">
+                <img src="img/btn_4.png" alt="about"></a>
+
+            <img src="img/base.png" class="main__logo" data-aos="fade-up" data-aos-offset="0" alt="base">
+
+            <a href="#tekenomics" title="Buy" data-aos="fade-down" data-aos-delay="100" data-aos-offset="0">
+                <img src="img/btn_2.png" alt="Buy"></a>
+
+            <a href="#" target="_blank" title="Game" data-aos="fade-left" data-aos-offset="0">
+                <img src="img/btn_3.png" alt="Game"></a>
+        </nav>
+        <img src="img/baby.png" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0" class="main__h1"
+            alt="baby mumba">
+        <img src="img/main.png" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0" class="main__img"
+            alt="baby mumba image">
+        <div class="soc fx">
+            <a href="#" target="_blank" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0" title="telegram">
+                <img src="img/tg.png" alt="telegram">
+            </a>
+            <a href="#" target="_blank" data-aos="fade-up" data-aos-delay="400" data-aos-offset="0" title="dex">
+                <img src="img/dex.png" alt="dex">
+            </a>
+            <a href="#" target="_blank" data-aos="fade-up" data-aos-delay="500" data-aos-offset="0" title="twiter">
+                <img src="img/x.png" alt="x">
+            </a>
+        </div>
+    </main>
+
+    <div class="partners fxb">
+        <span data-aos="fade-up"><img loading="lazy" src="img/cmc.png" alt="i"></span>
+        <span data-aos="fade-up" data-aos-delay="100"><img loading="lazy" src="img/dex-1.png" alt="i"></span>
+        <span data-aos="fade-up" data-aos-delay="200"><img loading="lazy" src="img/screener.png" alt="i"></span>
+
+        <!-- <img src="img/lifs-r.png" class="partners__lif" loading="lazy" alt="lif"> -->
+    </div>
+
+    <!-- <script src="./js/aos.js"></script> -->
+
+    <div class="bg">
+        <div class="about fx" id="about">
+            <div class="col">
+                <img src="img/about_me.png" loading="lazy" alt="about_me">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem dolorum distinctio temporibus,
+                    repellendus accusamus error quis earum. Atque amet officiis natus nesciunt cupiditate maxime
+                    veritatis, distinctio eius, quod, harum itaque necessitatibus iusto eum est repellendus. Cumque cum
+                    ratione itaque maiores quam voluptas suscipit magni. Consequuntur, explicabo, perferendis fugit
+                    voluptatem, ab architecto
+                </p>
+                <button class="contract"></button>
+            </div>
+            <img src="img/second.png" class="about__img" loading="lazy" alt="about">
+        </div>
+
+        <div class="tekenomics fx" id="tekenomics">
+            <div class="col">
+                <img class="tekenomics__heading" loading="lazy" src="img/tokenomics.png" alt="i">
+            </div>
+            <div class="col">
+                <img class="tekenomics__heading" loading="lazy" src="img/playgame.png" alt="i">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente molestiae nesciunt modi tenetur,
+                    quae quasi culpa officiis aspernatur perferendis totam enim doloremque porro aliquid perspiciatis
+                    temporibus suscipit. Eum, ut enim.
+                </p>
+                <img class="tekenomics__heading" loading="lazy" src="img/taskbot.png" alt="i">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente molestiae nesciunt modi tenetur,
+                    quae quasi culpa officiis aspernatur perferendis totam enim doloremque porro aliquid perspiciatis
+                    temporibus suscipit. Eum, ut enim.
+                </p>
+            </div>
+        </div>
+
+        <footer class="footer fx">
+            <img src="img/logo-foot.png" alt="i" class="footer__logo" loading="lazy">
+            <img src="img/descr.png" alt="i" class="footer__descr" loading="lazy">
+            <img src="img/base.png" alt="i" class="footer__base" loading="lazy">
+            <img src="img/screem.png" alt="i" class="footer__screem" loading="lazy">
+
+        </footer>
+
+    </div>
+
+
+    <script>
+        AOS.init({ duration: 1000, });
+
+        function copyText() {
+            var button = document.querySelector('.contract');
+            var dataToCopy = button.getAttribute('data-copy');
+            navigator.clipboard.writeText(dataToCopy)
+                .then(function () { alert('Text copied: ' + dataToCopy); })
+                .catch(function (err) { console.error('Failed to copy text:', err); });
+        }
+    </script>
+
+
+</body>
+
+</html>

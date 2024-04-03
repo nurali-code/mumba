@@ -1,0 +1,133 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    border: none
+    outline: none
+
+$prime: #00ffff
+$second: #000
+
+html
+    scroll-behavior: smooth
+
+body
+    min-height: 100vh
+    color: $prime
+    background-color: #000
+    font-family: 'Berlin', sans-serif
+    background-image: url('../img/bg.jpg')
+    background-repeat: no-repeat
+    background-position: center top
+    background-size: cover
+
+img
+    max-width: 100%
+
+a,
+button
+    display: inline-block
+    text-decoration: none
+    transition: all ease .2s
+    background-color: transparent
+    &:active
+        transform: scale(.98)
+
+    img
+        display: block
+
+p
+    font-size: 1.7vw
+
+.btn
+
+    display: block
+    font-size: 0
+    max-width: 320px
+    position: relative
+    z-index: 1
+
+    img
+        display: block
+
+    &.img
+        padding-right: 98px
+        width: 28vw
+        max-width: 420px
+
+    &__side
+        position: absolute
+        top: 50%
+        transform: translateY(-55%)
+        max-height: 147%
+        right: 0
+
+.fx, .fxb, .fxc
+    display: flex
+    align-items: center
+
+.fxb
+    justify-content: space-between
+
+.fxc
+    flex-direction: column
+
+.bg
+    background-repeat: no-repeat
+    background-position: top center
+    background-size: cover
+    background-image: url('../img/bg_rest.jpg')
+    overflow: hidden
+
+.contract
+    font-size: 24px
+    font-style: normal
+    font-weight: 700
+    line-height: 150%
+    text-align: center
+    // color: rgb(245 135 138)
+    color: #fff
+
+    display: block
+    width: 100%
+    max-width: 100%
+    min-height: 85px
+    padding: 12px 22px
+    border-radius: 100px
+    margin: 20px auto 0
+
+    border: 3px solid rgba($prime, 1)
+    background-color: rgba(#fff, .05)
+    backdrop-filter: blur(5px)
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+
+    // background: rgb(255,255,255)
+    // background-image: linear-gradient(125deg, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.1) 48%, rgba(255,255,255,0.1) 100%)
+    animation: contract 1s ease infinite alternate-reverse
+
+    img
+        width: 22px
+        display: inline-block
+        vertical-align: middle
+        margin-left: 10px
+        position: absolute
+        right: 22px
+        top: 50%
+        transform: translateY(-50%)
+
+    &[data-copy]
+        padding: 14px 62px 14px 22px
+
+    &:hover
+        transition-duration: .3s !important
+        animation-delay: 0 !important
+        transform: scale(1.05) !important
+
+@keyframes contract
+    0%
+        background-color: rgba(#fff, .05)
+
+    100%
+        background-color: rgba($prime, .11)
