@@ -19,6 +19,7 @@
     nav
         width: 90vw
         gap: 2%
+        justify-content: space-between
         a
             width: 14vw
             display: block
@@ -51,10 +52,10 @@
 
     &__img
         position: absolute
-        top: 50%
+        top: 55%
         width: 65vw
         right: -6%
-        height: 90%
+        height: 80%
         transform: translateY(-50%)
         z-index: -1111
         img
@@ -83,18 +84,19 @@
     @media screen and ( max-width: 1000px )
         padding: 3vw 0 5vw
         .soc
-            max-width: 70vw
+            max-width: 74vw
 
         nav
             flex-wrap: wrap
+            justify-content: center
             width: 100%
             gap: 0
             a
-                width: 25vw
+                width: 33vw
                 order: 2
 
-            img 
-                transform: scale(1.15)
+            img
+                transform: scale(1.1)
 
         &__logo
             width: 100%
@@ -105,16 +107,16 @@
             margin-bottom: 2vw
 
         &__h1
-            top: 31%
+            top: 35%
             width: 79vw
             height: 30%
             transform: translateY(-55%)
 
         &__img
-            width: 138vw
+            width: 125vw
             height: 40%
-            top: 42%
-            right: -19%
+            top: 45%
+            right: -12%
             transform: none
 
 .partners
@@ -130,6 +132,8 @@
         max-width: 48%
         img
             display: block
+            height: 5vw
+            object-fit: contain
             transition: all ease .2s
             filter: drop-shadow(0 0 30px rgba(#ff66ff, .8))
             &:hover
@@ -143,14 +147,15 @@
         right: -5%
 
     @media screen and ( max-width: 1000px )
-        padding: 6vw 3vw 
+        padding: 15vw 3vw
         flex-wrap: wrap
         justify-content: center
         gap: 6vw
-        span 
+        span
             width: 46%
 
-
+            img
+                height: unset
 
 .about
     padding: 6vw 0
@@ -165,21 +170,65 @@
     &__img
         width: 50vw
 
+    @media screen and ( max-width: 1000px )
+        display: block
+        padding: 10vw 0
+        overflow: hidden
+
+        .col
+            width: 90vw
+            margin-bottom: 10vw
+
+        &__heading
+            width: 90%
+            margin: 0 auto 2vw
+            display: block
+
+        p
+            text-align: center
+            padding: 0
+
+        &__img
+            display: block
+            width: 120vw
+            max-width: unset
+            position: relative
+            left: -10vw
+
 .tekenomics
     padding: 100px 0
     align-items: flex-start
     .col
         width: 35vw
         margin: 0 auto
+        &:first-child
+            text-align: center
 
     &__heading
         max-width: 90%
         max-height: 150px
         margin: 0 0 1.5vw 1vw
         display: block
+        &.--pulse
+            animation: pulse 1s ease infinite alternate-reverse
 
     p
         margin-bottom: 2vw
+
+    @media screen and ( max-width: 1000px )
+        display: block
+        .col
+            width: 90vw
+            margin-bottom: 15vw
+            text-align: center
+            &:last-child
+                max-width: 73vw
+
+        &__heading
+            margin: 0 auto 3vw
+
+        p
+            margin-bottom: 7vw
 
 .footer
     padding: 4vw 21vw 2vw 3vw
@@ -203,8 +252,37 @@
         right: -4vw
         width: 25vw
 
-@media screen and ( max-width: 1000px )
-    .about,
-    .tekenomics,
-    .footer
-        display: none
+    @media screen and ( max-width: 1000px )
+        flex-wrap: wrap
+        padding: 4vw
+        align-items: center
+        img
+            display: block
+            margin: 0 0 2vw
+
+        &__logo
+            width: 30vw
+            order: 2
+
+        &__descr
+            order: 1
+            width: 90vw
+
+        &__base
+            width: 20vw
+            order: 3
+
+        &__base
+            margin: 0 auto 0 3vw !important
+
+        &__screem
+            width: 45vw
+            bottom: -11vw
+            right: -10vw
+
+@keyframes pulse
+    0%
+        transform: scale(.94)
+    100%
+        transform: scale(1.08)
+        
